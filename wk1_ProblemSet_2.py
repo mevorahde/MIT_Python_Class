@@ -7,8 +7,8 @@ Created on Sat Sep 29 18:15:44 2018
 numBobs = 0
 s = 'azcbobobegghakl'
 
-for word in s:
-    if "bob" in word[0:25]:
-        print("success")
-        numBobs += 1
-print('Number of times bob occurs is: ' + str(numBobs))
+
+for i in range(len(s)):
+    if s[i:i+3] == 'bob':
+        numBobs += 1    
+print('Number of times bob occurs is: ' + str(numBobs)) 
