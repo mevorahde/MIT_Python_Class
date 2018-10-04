@@ -7,8 +7,13 @@ Created on Sun Sep 30 20:10:34 2018
 
 s = 'azcbobobegghakl'
 
-for i in range (len(s)):
-    if (s[i] <= s[i+1]):
+for i in range (1,len(s)):
+
+    if (s[i-1] <= s[i]):
+        #print(s[i:i-1])
         print("Longest substring in alphabetical order is:", s)
     else:
-        print("Longest substring in alphabetical order is:", s[i])
+        print("Longest substring in alphabetical order is:", s[i-1])
+
+        
+        
